@@ -1,0 +1,88 @@
+/* Fonts */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  
+  .lora-regular> {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+  .montserrat-regular> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Index page */
+
+  /* Banner */
+  .banner-flex {
+    position: relative; 
+  }
+  
+  .banner-flex img {
+    width: 100%; 
+    display: block; 
+    opacity: 95%;
+  }
+  
+  .banner-flex aside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.572); /* Semi-transparent white background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .banner-flex aside h1 {
+    margin: 0; 
+    font-size: 2rem; 
+  }
+  
+  
+  /* Section */
+  .flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    height: 20%;
+  }
+  .flex-container > div{
+    align-items: center;
+    ;
+
+  }
+
+  .flex-container > img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any default spacing */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Cities Section */
+  #cities{
+    text-align: center;
+  }
+
+  .city-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  
+
