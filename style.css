@@ -1,29 +1,20 @@
-/* Fonts */
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-  
-  .lora-regular> {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-
-  .montserrat-regular> {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
   /* Index page */
+  #headers
+  {
+    text-align: center;
+    color: antiquewhite;
+    background-color: navy;
+    padding-bottom: 10px;
+  }
+
+  #headers img
+  {
+    max-width: 100px;
+  }
 
   /* Banner */
   .banner-flex {
@@ -74,15 +65,30 @@
 }
 
 /* Cities Section */
-  #cities{
+   #cities{
     text-align: center;
   }
 
-  .city-flex{
+  .city-flex {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
+    justify-content: center; /* Center items horizontally */
+}
+
+.city-flex ul {
+    display: flex; /* Use flexbox for the <ul> */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.city-flex ul li {
+    margin: 0 10px; /* Adjust margin between list items */
+}
+
+.city-flex ul li a {
+    text-decoration: none; /* Remove underline from links */
+    text-align: center; /* Center text */
+}
+
 
   
 
