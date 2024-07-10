@@ -41,8 +41,35 @@ body{
     margin: 0; 
     font-size: 2rem; 
   }
-  
-  
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: rgb(0, 53, 244);
+}
+
   /* Section */
   .flex-container {
     display: flex;
@@ -58,10 +85,10 @@ body{
   }
 
   .flex-container > img {
-    max-width: 100%; /* Ensures the image doesn't exceed its container */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Removes any default spacing */
-    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
 }
 
 /* Cities Section */
@@ -71,24 +98,253 @@ body{
 
   .city-flex {
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center; 
 }
 
 .city-flex ul {
-    display: flex; /* Use flexbox for the <ul> */
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
+    display: flex; 
+    list-style-type: none; 
+    padding: 0; 
 }
 
 .city-flex ul li {
-    margin: 0 10px; /* Adjust margin between list items */
+    margin: 0 10px; 
 }
 
 .city-flex ul li a {
-    text-decoration: none; /* Remove underline from links */
-    text-align: center; /* Center text */
+    text-decoration: none; 
+    text-align: center;
+}
+
+.city-flex span{
+  display: block;
+  flex-direction: column;
 }
 
 
+/* Sidebar section */
+/* Basic styling for the sidebar */
+#sidebar {
+
+  width: 100px; 
+  position: absolute; 
+  top: 0;
+  right: 0;
+  background-color: #333; 
+  margin-top: 20%; 
   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar h3 {
+  color: #ffffff; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+/* Style for the#sidebar links */
+#sidebar ul {
+  list-style-type: none; 
+  padding: 0; 
+  
+}
+
+#sidebar ul li {
+  margin-bottom: 10px; 
+}
+
+#sidebar ul li a {
+  
+  display: block; 
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px; 
+  transition: background-color 0.3s; 
+}
+
+#sidebar ul li a:hover {
+  background-color: #555; 
+}
+
+/* City Page */
+
+.city-section {
+  border: 2px solid #333; 
+  padding: 20px; 
+  max-width: 600px; 
+  margin: auto; 
+  margin-top: 20px;
+}
+
+.city-section h1 {
+  align-items: center;
+}
+
+.city-section a{
+  text-decoration: none ;
+}
+
+.city-section ol {
+
+  padding-left: 0; 
+  margin: 15px;
+}
+
+.city-section li {
+  margin-bottom: 20px; 
+}
+
+.city-section li p {
+  margin-top: 5px; 
+}
+
+
+/* Providence Page */
+
+.cityheader {
+  background-color: #a6a6a6;
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.prov{
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  background-color: #a6a6a6;
+  border-radius: 10px; 
+}
+
+#provImg {
+  display: block; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Newport Page */
+.newport{
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  background-color: #a6a6a6;
+  border-radius: 10px;
+}
+
+#newportImg{
+  display: block; 
+  margin: 0 auto; 
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Warwick */
+.warwick{
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  background-color: #a6a6a6;
+  border-radius: 10px;
+}
+
+#warwickImg{
+  display: block; 
+  margin: 0 auto; 
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+
+/* Culture page */
+
+.toDo{
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  background-color: #a6a6a6;
+  border-radius: 10px;
+}
+
+.toDo h3{
+  text-align: center;
+}
+
+.toDo  img{
+  display: block; 
+  margin: 0 auto; 
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Event Calendar Page */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th {
+  border: 1px solid black; 
+  padding: 5px;
+  text-align: center;
+  height: 80px; 
+  position: relative; 
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  border: 1px solid black; 
+  padding: 5px;
+  text-align: center;
+  height: 80px; 
+  position: relative; 
+}
+
+.day {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+}
+
+.event {
+  background-color: rgb(122, 122, 122);
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 12px; 
+  max-width: calc(100% - 20px); 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+
 
