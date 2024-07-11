@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Thank you for you submission! We will get back to you as soon as possible.");
 
         setTimeout(function() {
-          location.reload(); // Refresh the page after a short delay
+          window.location.href = "contact.html"; 
         }, 1000); // Adjust the delay time (in milliseconds) as needed
         
     }
