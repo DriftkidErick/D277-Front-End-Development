@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const confirmEmail = document.getElementById("confirmEmail");
 
   form.addEventListener("submit", function (event) {
+
+
     if (email.value !== confirmEmail.value) {
       alert("Emails do not match!");
       event.preventDefault();
@@ -12,11 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     {
         alert("Thank you for you submission! We will get back to you as soon as possible.");
 
-        setTimeout(function() {
-          window.location.href = "contact.html"; 
-        }, 1000); // Adjust the delay time (in milliseconds) as needed
-        
+        event.preventDefault();
+
+        form.reset(); //Reset the entire contact page   
     }
-    
   });
 });
